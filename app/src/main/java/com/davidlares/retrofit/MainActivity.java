@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<List<DataItem>> call, Response<List<DataItem>> response) {
                 if(response.isSuccessful()) {
                     for (DataItem item : response.body()) {
-                        Log.d(TAG, "Record: " + item);
-
+                        Log.d(TAG, "Record: " + item.toString());
+                        tView.append(item.toString() + "\n");
                     }
                 }
             }

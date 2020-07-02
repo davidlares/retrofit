@@ -11,8 +11,9 @@ import retrofit2.http.GET;
 
 public interface MyWebService {
 
-    String BASE_URL = "https://jsonplaceholder.typicode.com";
-    String FEED = "/posts";
+    // http://560057.youcanlearnit.net/services/json/itemsfeed.php
+    String BASE_URL = "https://jsonplaceholder.typicode.com/";
+    String FEED = "posts";
 
     // Retrofit instance
     Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL)
